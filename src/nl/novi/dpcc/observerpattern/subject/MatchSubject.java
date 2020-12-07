@@ -6,7 +6,7 @@ import nl.novi.dpcc.observerpattern.observer.Observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MatchPublisher implements Subject {
+public class MatchSubject implements Subject {
 
     private List<Observer> observers = new ArrayList<>();
 

@@ -4,7 +4,7 @@ import nl.novi.dpcc.observerpattern.domain.MatchEventType;
 import nl.novi.dpcc.observerpattern.domain.Message;
 import nl.novi.dpcc.observerpattern.observer.Observer;
 import nl.novi.dpcc.observerpattern.observer.SupporterObserver;
-import nl.novi.dpcc.observerpattern.subject.MatchPublisher;
+import nl.novi.dpcc.observerpattern.subject.MatchSubject;
 import nl.novi.dpcc.observerpattern.subject.Subject;
 
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ public class Main {
         Observer ajaxSupporter = new SupporterObserver("Ajax");
         Observer feyenoordSupporter = new SupporterObserver("Feyenoord");
 
-        Subject match = new MatchPublisher();
+        Subject match = new MatchSubject();
 
         match.attach(ajaxSupporter);
         match.attach(feyenoordSupporter);
