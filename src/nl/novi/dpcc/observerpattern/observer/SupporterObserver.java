@@ -5,13 +5,13 @@ import nl.novi.dpcc.observerpattern.domain.Message;
 
 public  class SupporterObserver implements Observer {
 
-    private String favouriteClub;
+    private final String favouriteClub;
 
     public SupporterObserver(String favouriteClub) {
         this.favouriteClub = favouriteClub;
     }
 
-    public  void update(Message message) {
+    public void update(Message message) {
         String clubname = message.getClubName();
         MatchEventType eventType = message.getMatchEventType();
 
@@ -38,7 +38,7 @@ public  class SupporterObserver implements Observer {
             case RED_CARD:
                 return "whistles at the referee";
         }
-        return "leave the stadium.";
+        return "leaves the stadium.";
     }
 
     private String crowdReactionOpponent(MatchEventType eventType) {
@@ -46,15 +46,15 @@ public  class SupporterObserver implements Observer {
             case GOAL:
                 return "shows dismay.";
             case PENALTY:
-                return "yell the goalkeepers name for the penalty.";
+                return "yells the goalkeeper's name for the penalty.";
             case YELLOW_CARD:
-                return "laugh at the yellow player.";
+                return "laughs at the yellow player.";
             case SCHWALBE:
                 return "yells SCHWALBE!";
             case RED_CARD:
                 return "cheers in celebration of the red card.";
         }
-        return "leave the stadium.";
+        return "leaves the stadium.";
     }
 
 }
