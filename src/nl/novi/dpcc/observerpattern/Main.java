@@ -13,9 +13,7 @@ import java.util.Random;
 
 public class Main {
 
-
     public static void main(String[] args) throws InterruptedException {
-
         Observer ajaxSupporter = new SupporterObserver("Ajax");
         Observer feyenoordSupporter = new SupporterObserver("Feyenoord");
 
@@ -33,6 +31,7 @@ public class Main {
     private static Message pickRandomMessage() {
         List<Message> messages = makeList();
         Random random = new Random();
+
         return messages.get(random.nextInt(messages.size()));
     }
 

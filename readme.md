@@ -20,3 +20,20 @@ Alle observer-klasse implementeren de Observer interface. Deze interface bevat d
 
 ## Verdere werking
 De theorie en de verdere werking van de code staat uitschreven in EdHub.
+
+## Opdracht (van EdHub)
+Om te oefenen met de Observer Pattern gaan we deze code aanpassen. Fork deze repo.
+
+### Feeling krijgen
+Probeer de volgende dingen om feeling met de code te krijgen:
+
+ * Voeg een extra MatchEventType toe en hoe de supporters op deze reageren.
+ * Voeg een neutrale toeschouwer toe en zorg dat deze anders reageert dan de overige supporters.
+
+### Helemaal los gaan
+
+ * Bouw een nieuwe Observer. Deze observer wordt de score-board van de wedstrijd.
+ * De score board moet het aantal doelpunten (per team) bijhouden.
+ * De score board moet het aantal rode kaarten (per team) bijhouden.
+ * De score board moet het aantal gele kaarten (per team) bijhouden.
+ * BONUS: Print de scoreboard pas aan het eind van de wedstrijd in zijn geheel uit.
