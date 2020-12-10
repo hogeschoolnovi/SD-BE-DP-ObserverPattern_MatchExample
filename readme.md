@@ -37,3 +37,5 @@ Probeer de volgende dingen om feeling met de code te krijgen:
  * De score board moet het aantal rode kaarten (per team) bijhouden.
  * De score board moet het aantal gele kaarten (per team) bijhouden.
  * BONUS: Print de scoreboard pas aan het eind van de wedstrijd in zijn geheel uit.
+ * BONUS 2: Pas het message-bericht aan, zodat je altijd een actieve en passieve club kan meegeven.
+ * BONUS 2b: Voeg reacties toe voor een neutrale toeschouwer.
