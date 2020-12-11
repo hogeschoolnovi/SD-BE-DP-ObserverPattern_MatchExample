@@ -5,5 +5,7 @@ public enum MatchEventType {
     SCHWALBE,
     PENALTY,
     YELLOW_CARD,
-    RED_CARD
+    RED_CARD,
+    CORNER_KICK,
+    MATCH_END
 }
