@@ -39,3 +39,11 @@ Probeer de volgende dingen om feeling met de code te krijgen:
  * BONUS: Print de scoreboard pas aan het eind van de wedstrijd in zijn geheel uit.
  * BONUS 2: Pas het message-bericht aan, zodat je altijd een actieve en passieve club kan meegeven.
  * BONUS 2b: Voeg reacties toe voor een neutrale toeschouwer.
+ 
+## Uitwerking
+Voor de uitwerking is een extra klasse toegevoegd. In deze klasse worden de statistieken van het betreffende team
+bijgehouden. 
+Deze uitwerking bevat nog twee dingen, die in de bonus wel worden opgelost:
+ * Technisch gezien is het mogelijk dat er 10 keer een event van 1 club gestuurd wordt. Dan wordt er een RunTimeException gegooid.
+ * Het Message bericht geeft altijd 1 team mee. Wanneer een `MATCH_END` bericht stuurt zou je eigenlijk geen teamnaam
+ willen meegeven.
